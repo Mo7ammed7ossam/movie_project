@@ -10,7 +10,7 @@ export default function Movie() {
   useEffect(() => {
     axios
       .get(
-        "https://api.themoviedb.org/3/trending/all/day?api_key=8bae8a552fdd8f0d6e7e5caa1aac2f54&page"
+        "https://api.themoviedb.org/3/trending/movies/day?api_key=8bae8a552fdd8f0d6e7e5caa1aac2f54&page=3"
       )
       .then((response) => {
         setMovies(response.data.results);
